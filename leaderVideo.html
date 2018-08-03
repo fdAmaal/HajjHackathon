@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Instascan &ndash; Demo</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+	  margin: 0;
+	  background: #263238;
+	}
+
+	/* Create three equal columns that floats next to each other */
+	.column {
+		float: left;
+		width: 49.33%;
+		padding: 15px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+.button {
+    background-color: #ad2b33;
+    border: none;
+    color: white;
+   padding: 14px 740px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 14px 20px;
+    cursor: pointer;
+}
+	</style>
+	
+
+
+  </head>
+  <body>
+  	<!-- Header -->
+					<header id="header" class="alt">
+					<br/>
+						<nav style="length:100px">
+							  <img id="logo1" width="70px;" src="logo.png">
+
+						</nav>
+					</header>
+
+ <div class="row" style="margin-top:30px;">
+  <div class="column">
+ <div class="preview-container" >
+        <video id="preview" style="border-style: ridge;" width="700" height="400"></video>
+ </div>
+ </div>
+ 
+   <div class="column">
+		<iframe  width="750" height="400" src="https://www.youtube.com/watch?v=oJahu9oAg78">
+</iframe>
+ </div>
+ 
+ <a href="home.html" class="button">X</a>
+
+ </div>
+	  
+	  
+	  
+    <script type="text/javascript" src="docs/app.js"></script>
+  </body>
+</html>

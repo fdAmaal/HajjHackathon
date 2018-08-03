@@ -22,31 +22,45 @@
   
   position: relative;
    top:0cm;
-    width: 1530px;
+    width: 67cm;
     height: 11cm;
+      }
+      #logo1{
+position: relative;
+left:39cm;
+top:0.5cm;
+
+
       }
 
 </style>
 
-		<title>درب الحاج</title>
+		<title>Forty by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		    <link rel="stylesheet" href="docs/style.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
-    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
 	</head>
-	<body class="is-preload" onload="ChangeImg();" >
+	<body class="is-preload" >
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
 var d = new Date();
 var n = d.getHours();
-if(n==6)
+if(n==7){
 $("#m1").attr("src","images1/img2.png");
+$("#vid").attr("src","https://www.youtube.com/embed/uBvVPj2a2fA");
+}
+/*$('#vid https://www.youtube.com/embed/AQ3gkLhRCjE?ecver=1')[0].load();
+//$("#vid")[0].load();
+.html('<source src=" https://www.youtube.com/embed/AQ3gkLhRCjE?ecver=1" ></source>' );*/
+
+/*var video = $('#vid https://www.youtube.com/embed/AQ3gkLhRCjE?ecver=1')[0];
+video.src = 'https://www.youtube.com/embed/uBvVPj2a2fA';
+video.load();
+video.play();*/
+
 if(n==4)
 $("#m1").attr("src","images1/img6.png");
 if(n==2)
@@ -61,7 +75,7 @@ if(n==1)
 $("#m1").attr("src","images1/img6.png");
     });
 
-function ChangeImg(){
+/*function ChangeImg(){
 
 var d = new Date();
 var n = d.getHours();
@@ -94,7 +108,7 @@ document.getElementById("manasek").src= "images1/img5.png";
 document.getElementById("manasek").src= "images1/img6.png";
 
 
-}
+}*/
 
 
 </script>
@@ -124,74 +138,12 @@ document.getElementById("manasek").src= "images1/img6.png";
     </script>
 
 
-  <img src="/Users/macbookpro/Desktop/qq/logo.png" width="460" height="345" style="position:absolute; right:-5cm; top:-1.5cm;">
+  <img id="logo1" src="logo.png">
 
 		<!-- Wrapper -->
 			<div id="wrapper" >
-	<!-- Header -->
-					<header id="header" class="alt">
-					<br/><br/>
-						<nav style="length:100px">
-							  <img id="logo1" width="70px;" src="logo.png">
 
-						</nav>
-					</header>
 				<!-- Banner -->
-				
-				
-								<article>
-								<div id="map" ></div>
-								</article>
-				
-								<br/>
-					
-
-				<!-- Main -->
-					<div id="main">
-
-					<!-- One -->
-							<section id="one" class="tiles">
-							
-										<div id="vid"  >
-								<div id="app" style="width:600px; height:470;">
-						
-								  <ul v-if="scans.length === 0">
-									<p>No scans yet</p>
-								  </ul>
-								  <transition-group name="scans" tag="ul">
-									<p id="scan" onchange="myFunction(this.value)" v-for="scan in scans" :key="scan.date" :title="scan.content">{{ scan.content }}</p>
-									  
-								  </transition-group>
-								
-								
-							  <div class="preview-container">
-								<video id="preview"></video>
-							  </div>
-							</div>
-											
-									
-											<script>
-											
-											window.onload = function(){
-											 document.getElementById(scanx).innerHTML = "Item was changed";
-											}
-
-											</script>
-											
-											
-											
-    <script type="text/javascript" src="docs/app.js"></script>
-	
-									</div>
-								
-							
-										<div id="vid" >
-										<iframe width="900" height="470" src="https://www.youtube.com/embed/AQ3gkLhRCjE?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-									</div>
-								
-				
-							</section>
-								
 					<section id="banner" class="major">
 						<div class="inner">
 									
@@ -199,17 +151,22 @@ document.getElementById("manasek").src= "images1/img6.png";
 							
 						</div>
 					</section>
-							
+
+				<!-- Main -->
+					<div id="main">
+
 						<!-- One -->
 							
 								
 									
+									<div id="vid" ><iframe width="900" height="470" src="https://www.youtube.com/embed/AQ3gkLhRCjE?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
 								
-									
-								
 
 
 
+								<article>
+								<div id="map" ></div>
+								</article>
 
 							
 
